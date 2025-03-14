@@ -18,9 +18,9 @@
 			{
 				Console.WriteLine("Nincs ilyen motormárka az állományban.");
 			}
+			Console.WriteLine($"Összes ár a '{brand}' márkájú motorok esetén: " + stat.SumBasedOnBrand(brand, "motors.txt") + " EUR");
 			Motor oldestMotor = stat.Oldest();
 			Console.WriteLine("Legrégebbi motor: " + oldestMotor.Brand + " " + oldestMotor.Name + " (" + oldestMotor.ReleseYear + ")");
-			Console.WriteLine("Összes ár a 'Yamaha' márkájú motorok esetén: " + stat.SumBasedOnBrand("Yamaha", "motors.txt") + " EUR");
 
 
 			stat.Sort();
